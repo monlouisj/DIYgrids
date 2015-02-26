@@ -1,0 +1,463 @@
+.rapport_body {
+	background-color: rgb(230, 230, 250);
+	color: #3e3e3e;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 20px;
+	/*margin-top: 110px !important;*/
+	width: 97%;
+}
+
+
+
+.controlNav .col-xs-6 input {
+	margin: 0px;
+}
+.controlNav .form-control{
+	height: 24px;
+	font-size: 12px;
+}
+.controlNav .btn {
+	padding: 1px 6px;
+	font-size: 14px;
+}
+
+.controlNav input.form-control, .controlNav select.form-control {
+	padding: 0px 0px 0px 6px;
+	margin: 0px;
+}
+
+button.btn.btn-logout {
+	padding: 8px 25px 3px 25px;
+	font-size: 10px;
+	background-color: #4f4f4f;
+	color: #ffffff;
+	position: fixed;
+	top: -5px;
+	right: 200px;
+	z-index: 999;
+	border: 1px solid rgb(219, 219, 219);
+	text-shadow: none;
+	font-weight: 700;
+}
+
+button.btn.btn-logout:hover {
+	background-color: #707070;
+}
+
+.btn-success {
+	float: right;
+	position: relative;
+	margin: 7px;
+	width: 159px;
+	height: 31px;
+	margin-right: 170px;
+}
+
+.btns_cont {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.btn-action {
+	float: left;
+	padding: 2px 4px;
+	margin-right: 10px;
+	color: #ffffff;
+	font-size: 11px;
+}
+
+.btn-action:hover {
+	color: #ffffc6;
+}
+
+.csv {
+	background-color: #21265C;
+}
+
+.csv:hover {
+	background-color: #464fbd;
+}
+
+.pdf {
+	background-color: #EA2929;
+}
+
+.pdf:hover {
+	background-color: #FF8800;
+}
+
+h1 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.grid {
+	width: 100%;
+	border: 1px solid lightgrey;
+	margin-bottom: 20px;
+}
+.grid td>input{
+	width:90%;
+	min-width: 20px;
+	border: 1px solid rgb(195, 207, 224);
+	height: 21px;
+	font-size: 9px;
+}
+.grid a{
+	color:#ff8409;
+}
+.grid td.ng-binding.ng-scope {
+	line-height: 20px;
+}
+
+.grid tr {
+	border-bottom: 1px solid lightgrey;
+}
+
+.grid tr:first-child {
+	border-top: 1px solid lightgrey;
+	border-bottom: none;
+}
+
+.grid tr:nth-child(2n+1) {
+	background-color: #ffffff;
+}
+
+.grid tr:nth-child(2n) {
+	background-color: #fff9f9;
+}
+
+.header {
+	text-align: center;
+	border-top-color: #a8a8a8;
+	background-color: #f5f9fc;
+	/* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(top, #F9F9F9, #EDEEF0);
+	/* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+	background-image: -moz-linear-gradient(top, #F9F9F9, #EDEEF0);
+	/* For Firefox (3.6 to 15) */
+	background-image: -o-linear-gradient(top, #F9F9F9, #EDEEF0);
+	/* For old Opera (11.1 to 12.0) */
+	background-image: linear-gradient(to top, #F9F9F9, #EDEEF0);
+	/* Standard syntax; must be last */
+	color: #0000;
+	font-weight: 300;
+	border-left: 1px solid #a8a8a8;
+	border-right: 1px solid #a8a8a8;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+ .header a{
+ 	text-decoration: none;
+ }
+ 
+ .header a:hover{
+	color: navy;
+	color: brown;
+}
+
+.footer {
+	text-align: center;
+	background-color: #ffffff;
+	color: #737373;
+	font-weight: 500;
+}
+
+#container {
+	padding: 10px;
+	float: left;
+	width: 100%;
+}
+#container h6 {
+	text-align: center;
+	text-shadow: none;
+	margin-bottom: 12px;
+	color:navy;
+}
+
+.onglet>a {
+	background-color: #f5f9fc;
+	/* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(bottom, #B8CFEE, #f5f9fc);
+	/* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+	background-image: -moz-linear-gradient(bottom, #B8CFEE, #f5f9fc);
+	/* For Firefox (3.6 to 15) */
+	background-image: -o-linear-gradient(bottom, #B8CFEE, #f5f9fc);
+	/* For old Opera (11.1 to 12.0) */
+	background-image: linear-gradient(to bottom, #B8CFEE, #f5f9fc);
+	/* Standard syntax; must be last */
+	color: navy;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+	{
+	background-color: #f5f9fc;
+	/* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(bottom, #ffffff, #f5f9fc);
+	/* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+	background-image: -moz-linear-gradient(bottom, #ffffff, #f5f9fc);
+	/* For Firefox (3.6 to 15) */
+	background-image: -o-linear-gradient(bottom, #ffffff, #f5f9fc);
+	/* For old Opera (11.1 to 12.0) */
+	background-image: linear-gradient(to bottom, #ffffff, #f5f9fc);
+	/* Standard syntax; must be last */
+	color: navy;
+}
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover,
+	.nav-tabs.nav-justified>.active>a:focus {
+	border: 0px solid #8db2e3;
+}
+
+.nav-tabs.nav-justified>li>a {
+	border: 1px solid #8db2e3;
+}
+
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
+}
+
+#chargement {
+	width: 100%;
+	height: 250px;
+	z-index: 0;
+	padding: 30px;
+}
+
+/* ANIMATION CHARGEMENT */
+.sk-spinner-three-bounce.sk-spinner {
+	margin: 0 auto;
+	width: 70px;
+	text-align: center;
+}
+
+.sk-spinner-three-bounce div {
+	width: 18px;
+	height: 18px;
+	background-color: rgb(195, 207, 224);
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-threeBounceDelay 1.4s infinite ease-in-out;
+	animation: sk-threeBounceDelay 1.4s infinite ease-in-out;
+	/* Prevent first frame from flickering when animation starts */
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.sk-spinner-three-bounce .sk-bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.sk-spinner-three-bounce .sk-bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-threeBounceDelay { 0%, 80%, 100% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+40%{ -webkit-transform:scale(1);
+
+		
+transform:scale(1);
+
+	
+}
+}
+@keyframes sk-threeBounceDelay { 0%, 80%, 100% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+40%{
+-webkit-transform: scale(1);		
+transform:scale(1);
+
+}
+}
+
+/*LOGIN*/
+.form-signin {
+	max-width: 330px;
+	padding: 30px;
+	margin: 0 auto;
+	background-color: #f5f9fc;
+	/* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(bottom, #ffffff, #f5f9fc);
+	/* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+	background-image: -moz-linear-gradient(bottom, #ffffff, #f5f9fc);
+	/* For Firefox (3.6 to 15) */
+	background-image: -o-linear-gradient(bottom, #ffffff, #f5f9fc);
+	/* For old Opera (11.1 to 12.0) */
+	background-image: linear-gradient(to bottom, #ffffff, #f5f9fc);
+	/* Standard syntax; must be last */
+	color: navy;
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 12px;
+}
+
+.form-signin h2 {
+	text-shadow: none;
+}
+
+.form-signin .btn-block {
+	background-image: -webkit-linear-gradient(#2f7d2f, #379337 40%, #3da23d);
+	background-image: linear-gradient(#2f7d2f, #379337 40%, #3da23d);
+	background-repeat: no-repeat;
+}
+
+.form-signin .btn-block:hover {
+	background-image: -webkit-linear-gradient(#3da23d, #379337 40%, #2f7d2f);
+	background-image: linear-gradient(#3da23d, #379337 40%, #2f7d2f);
+	background-repeat: no-repeat;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+	font-weight: 100;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.error {
+	color: #ff0000;
+	font-size: 13px;
+}
+
+.tableGoogle {
+	float: left;
+	width: 100%;
+}
+.tableGoogle a:hover{
+	color: #f7940d;
+}
+.tableGoogle a{
+	color: #00005e;
+}
+.filtres {
+	float: left;
+	width: 100%;
+}
+
+.filtres>h6 {
+	text-align: left;
+	text-shadow: none;
+	margin-bottom: 0px;
+	color:navy;
+}
+
+.filtres ul {
+	width: 120%;
+	padding: 0px;
+}
+
+.filtres li {
+	list-style-type: none;
+	float: left;
+}
+
+.liFiltres{
+	background-color: #F9F9F9;
+	border-left: 1px solid #a8a8a8;
+	border-right: 1px solid #a8a8a8;
+}
+
+.liFiltres .glyphicon-search{
+	position:relative;
+	left: -20px;
+	color: lightGrey;
+	width:1px;
+}
+
+.filtres li>input {
+	min-width: 20px;
+	border: 1px solid rgb(195, 207, 224);
+}
+
+.spacers{
+	height: 20px;
+	background-color:rgb(230,230,250);
+	border-left: 0px solid rgb(230,230,250);
+	border-right: 0px solid rgb(230,230,250);
+	
+}
+
+/*gg tables*/
+.google-visualization-table-table {
+	font-size: 11px !important;
+}
+
+.resetBtn {
+	width: 17px;
+}
+
+.resetBtn div {
+	color: rgb(211, 211, 211);
+	text-align: right;
+	position: relative;
+	cursor: pointer;
+	top: -21px;
+	width: 8px;
+	height: 0px;
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+.resetBtn div:hover {
+	color: #ff0000;
+}
+.novalert{
+	color: #ffffff;
+	width: 253px;
+	height: auto;
+	text-align: center;
+	z-index: 1000;
+	border-radius: 12px;
+	position: absolute;
+	top: 100px;
+	left: 500px;
+	background-color: darkgreen;
+	padding: 27px;
+}
+.novalert>span{
+	float: right;
+	cursor: pointer;
+}
+.novalert>p{
+	font-size: 15px;
+}

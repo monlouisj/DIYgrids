@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+		<link rel='stylesheet' href='css/bootstrap.min.css' media='screen' />
+		<link rel='stylesheet' href='css/report.css'/>
+		<script src='js/lib/jquery-1.11.2.min.js'></script>
+		<script src="js/lib/angular.min.js"></script>
+		<script src="js/lib/localeFR.js"></script>
+		<script src="js/lib/sanitize.js"></script>
+		<script src="js/lib/angular-touch.js"></script>
+    	<script src="js/lib/angular-animate.js"></script>
+    	<script src="js/lib/ui-bootstrap-tpls-0.12.0.min.js"></script>
+    	<script src="js/lib/ui-bootstrap-0.12.0.min.js"></script>
+    	<script src="js/dataz.js"></script>
+		<script src='js/app.js'></script>
+		<title>Grid</title>
+	</head>
+				
+	<body ng-app='app' class ='rapport_body'>
+		<div ng-controller='GridController' ui-i18n="{{lang}}" id="container">
+			<!-- Loading mask -->
+		 	<div ng-if="grid.isLoading" id="chargement">
+		 		<p>Loading...</p>
+		 		<div class="sk-spinner sk-spinner-three-bounce">
+			      <div class="sk-bounce1"></div>
+			      <div class="sk-bounce2"></div>
+			      <div class="sk-bounce3"></div>
+			    </div>	
+			</div>
+
+			<!-- tabs -->
+			  <tabset id="tabz" justified="true">
+			  	<tab ng-repeat="rapport in rapports" heading="{{rapport.name}}" class="onglet" select='grid.setRapport(rapport.id)'></tab>
+			  </tabset>
+
+			
+			<!-- grid -->
+			<p  ng-if="!grid.isLoading && grid.noData">No data found</p>
+
+			<table ng-if="!grid.isLoading && !grid.noData" class="grid">
+			  		<tbody>
+			  			<h6 ng-if="!grid.isLoading && !grid.noData">Filter amongst <b>{{grid.combien}}</b> result{{grid.combien>1?'s':''}}:</h6>
+			  			
+			  			<!-- header -->
+			  			<tr>
+				  			<th class="header" ng-repeat="c in grid.col" >
+				  				<a href="#" tooltip="Trier" ng-click="grid.trier(c.id)">{{c.label}}</a>
+				  				<!-- Tri -->
+				  				<a href="#" tooltip="Trier" class="glyphicon" ng-class="(grid.reverse && grid.orderBy==c.id)?'glyphicon-chevron-down':'glyphicon-chevron-up'" ng-click="grid.trier(c.id)"></a>
+				  			</th>
+				  		</tr>
+				  		
+				  		<!-- filters -->
+				  		<tr>
+			  				<td class="liFiltres" ng-if="!grid.isLoading" ng-repeat="filtre in grid.filtres track by filtre.idx">
+			  					<input tooltip="Filtrer sur une valeur de '{{filtre.name.toUpperCase()}}'" ng-model="filtre.model" ng-keyup="grid.filtrer(filtre.name,filtre.model)" placeholder="{{filtre.name.toUpperCase()}}"/>
+								<span class="glyphicon glyphicon-search"></span>
+								<span class="resetBtn"><div href="#" ng-click="grid.resetFiltre(filtre.name)">x</div></span>
+							</td>
+			  			</tr>
+			  			
+						<!-- spacers -->
+				  		<tr>
+			  				<td class="spacers" colspan="{{grid.col.length}}" ng-if="!grid.isLoading"></td>
+			  			</tr>
+						
+			  			<!-- données -->
+					    <tr ng-repeat="ligne in grid.filtrat">
+					    	<td ng-repeat="cell in ligne track by cell.idx" ng-bind-html="cell.v"></td>
+					    </tr>
+				    </tbody>
+			</table>
+		</div>
+	</body>
+</html>
