@@ -1,5 +1,5 @@
 # DIYgrids
-A guide to design your own AngularJS grids with filters and sorting. Because it's not that hard!
+A guide for designing your own AngularJS grids with filters and sorting. Because it's not that hard!
 
 **Demo :** http://monlouisj.github.io/DIYgrids
 
