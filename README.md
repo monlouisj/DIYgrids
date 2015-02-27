@@ -7,4 +7,6 @@ I tried *ng-grid*/*ui-grid*, *trNgTable*, *angular-google-chart* and none could 
 
 So, DIYgrids allows you to do just that using AngularJS and Bootstrap.
 
+Demo : http://monlouisj.github.io/DIYgrids
+
 Cheers
